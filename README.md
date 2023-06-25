@@ -1,6 +1,6 @@
 # AuroraSocial
 Hackathon Encode x Aurora
-
+https://raw.githubusercontent.com/Tona23/AuroraSocial/main/AuroraSocial.png
 Desarrollo de la plataforma web:
    - Contratos
       - Base de datos
