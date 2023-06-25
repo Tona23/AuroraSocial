@@ -49,6 +49,7 @@ Dapp:
 Integración de Metapool y stNear:
    - Bloquear las regalias por n meses, mientras estan en liquid staking  
    - El usuario recibe las regalias originales y el rendimiento se queda en la plataforma para autofinanciarse evitando publicidad y cobro por suscripcion, todas las transacciones por parte del usuario seran a travez de eth (proximamente con stNear,Aurora, stAurora)
+![Metapool](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Metapool.png)
 
 Gestión de rendimientos y monetización:
    - La wallet creadora del contrato recibira las regalias cada n tiempo , depues se llevaran las crypto a metapool para meter fondos a Liquid Stake  
