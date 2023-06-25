@@ -30,6 +30,8 @@ Dapp:
       - Post New Code
       - Vote
       - Bet
+![Post](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Post.png)
+
    - New Post
       - Crear new post
       - Crear Post New Code
