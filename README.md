@@ -1,5 +1,5 @@
 # AuroraSocial
-Hackathon
+Hackathon Encode x Aurora
 
 Desarrollo de la plataforma web:
    - Contratos
@@ -30,7 +30,7 @@ Dapp:
    - New Post
       - Crear new post
       - Crear Post New Code
-      - Crear Vote
+      - Crear Vote-
       - Crear Bet
    - Update
       - Ver todas las publicaciones de la comunidad
@@ -47,4 +47,11 @@ Gestión de rendimientos y monetización:
 Retiro de Regalias:
    - Los usuarios obtienen sus regalias haciendo claim despues de n meses
 
-
+# Code
+- Descargar la carpeta AuroraSocial
+- Instalar truffle en caso de no tenerlo instalado 
+- crear archivo .env en el cual debera colocar llave privada y api infiura
+- Si desea compilar un nuevo contrato debera escribir el siguiente codigo en la raiz del proyecto
+   "npx truffle migrate --network " seguido del nombre de la network en la que quiere hacer deploy y eliminar los archivos json existentes
+- Editar todos los archivo js en la variable "NETWORK_ID" dependiendo de la network seleccionada
+- Correr servidor local 
