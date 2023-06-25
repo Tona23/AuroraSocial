@@ -37,6 +37,8 @@ Dapp:
       - Crear Post New Code
       - Crear Vote-
       - Crear Bet
+        ![Create](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Create.png)
+
    - Update
       - Ver todas las publicaciones de la comunidad
       - Interactuar con publicaciones
