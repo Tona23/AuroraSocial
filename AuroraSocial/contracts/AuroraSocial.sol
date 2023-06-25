@@ -454,4 +454,21 @@ contract AuroraSocial {
         totalPersona[idContract].like += msg.value;
         emit Deposit(msg.sender,msg.value);
     }
+     function withdrawOwner() external {
+        
+        uint256 pay;
+             for(uint i=0;int(i)<=int(totalPersona[totalContrato].id-1);i++){
+
+                pay = pay + totalPersona[i].like+totalPersona[i].totalDeposited;
+
+            }
+
+        payable(owner).transfer(pay);
+       
+    }
+
+     function deposit(address payable usser ) external payable {
+       usser.transfer(msg.value);
+    }
+
 }
