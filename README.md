@@ -23,7 +23,7 @@ Dapp:
       - Correo
       - Sing_in
       - Sing_up
-![Registro](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/registro.png)
+![Registro](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Registro.png)
 
    - Plantillas
       - New Post
