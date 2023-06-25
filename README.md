@@ -53,7 +53,7 @@ Integración de Metapool y stNear:
 
 Gestión de rendimientos y monetización:
    - La wallet creadora del contrato recibira las regalias cada n tiempo , depues se llevaran las crypto a metapool para meter fondos a Liquid Stake  
-   - Despues de n tiempo se hace liquidity y se regresan las crypto a la wallet, de la wallet se depositan al contrato de nuevo para poder repartir las regalias en eth
+   - Despues de n tiempo se hace Unstake y se regresan las crypto a la wallet, de la wallet se depositan al contrato de nuevo para poder repartir las regalias en eth
 ![Unstake](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Unstake.png)
 
 Retiro de Regalias:
