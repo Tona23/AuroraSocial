@@ -35,11 +35,10 @@ Dapp:
    - Update
       - Ver todas las publicaciones de la comunidad
       - Interactuar con publicaciones
-             
-5. Integración de Near y staking:
-   - Conectar nuestra plataforma con la red Near Protocol para permitir a los usuarios ingresar Near en sus wallets.
-   - Desarrollar una función de staking que permita a los usuarios bloquear sus Near en nuestra liquid staking pool durante 12 meses.
-   - Establecer las reglas y condiciones para desbloquear el contenido en su totalidad después del período de staking.
+
+Integración de Metapool y stNear:
+   - Bloquear las regalias por n meses, mientras estan en liquid staking  
+   - Despues de n meses podra hacer claim , recibiendo las regalias originales y el rendimiento se queda en la plataforma para autofinanciarse evitando publicidad y cobro por suscripcion
 
 6. Gestión de rendimientos y monetización:
    - Crear una wallet específica para recibir los rendimientos (APY) generados por el staking de los usuarios.
