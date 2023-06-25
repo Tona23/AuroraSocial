@@ -16,7 +16,26 @@ Desarrollo de la plataforma web:
     + Desarrollo de las páginas
     + Plantillas 
 
-
+Dapp:
+   - Registro
+      - Usuario
+      - Correo
+      - Sing_in
+      - Sing_up 
+   - Plantillas
+      - New Post
+      - Post New Code
+      - Vote
+      - Bet
+   - New Post
+      - Crear new post
+      - Crear Post New Code
+      - Crear Vote
+      - Crear Bet
+   - Update
+      - Ver todas las publicaciones de la comunidad
+      - Interactuar con publicaciones
+             
 5. Integración de Near y staking:
    - Conectar nuestra plataforma con la red Near Protocol para permitir a los usuarios ingresar Near en sus wallets.
    - Desarrollar una función de staking que permita a los usuarios bloquear sus Near en nuestra liquid staking pool durante 12 meses.
