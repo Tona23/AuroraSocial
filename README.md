@@ -38,16 +38,13 @@ Dapp:
 
 Integración de Metapool y stNear:
    - Bloquear las regalias por n meses, mientras estan en liquid staking  
-   - Despues de n meses podra hacer claim , recibiendo las regalias originales y el rendimiento se queda en la plataforma para autofinanciarse evitando publicidad y cobro por suscripcion
+   - El usuario recibe las regalias originales y el rendimiento se queda en la plataforma para autofinanciarse evitando publicidad y cobro por suscripcion, todas las transacciones por parte del usuario seran a travez de eth (proximamente con stNear,Aurora, stAurora)
 
-6. Gestión de rendimientos y monetización:
-   - Crear una wallet específica para recibir los rendimientos (APY) generados por el staking de los usuarios.
-   - Implementar un sistema que envíe los rendimientos a esa wallet específica para monetizar el contenido gratuito ofrecido en nuestra        plataforma.
+Gestión de rendimientos y monetización:
+   - La wallet creadora del contrato recibira las regalias cada n tiempo , depues se llevaran las crypto a metapool para meter fondos a Liquid Stake  
+   - Despues de n tiempo se hace liquidity y se regresan las crypto a la wallet, de la wallet se depositan al contrato de nuevo para poder repartir las regalias en eth
 
-7. Retiro de Near y finalización del staking:
-   - Establecer un mecanismo que permita a los usuarios retirar su Near de la liquid staking pool después de completar los 12 meses de staking.
-   - Implementar los controles necesarios para verificar que los usuarios hayan cumplido el período de staking antes de permitirles            retirar sus fondos.
+Retiro de Regalias:
+   - Los usuarios obtienen sus regalias haciendo claim despues de n meses
 
-8. Acceso y visualización de cryptoactivos:
-   - Desarrollar una función que permita a los usuarios iniciar sesión en su cuenta utilizando su correo electrónico.
-   - Proporcionar una interfaz en la que los usuarios puedan visualizar sus cryptoactivos en staking, incluido el saldo actual y el            tiempo restante para completar el staking de 12 meses.
+
