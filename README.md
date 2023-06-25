@@ -43,6 +43,8 @@ Dapp:
       - Ver todas las publicaciones de la comunidad
       - Interactuar con publicaciones
 ![Update](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/publi.png)
+![regalia](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Regalia.png)
+
 
 Integración de Metapool y stNear:
    - Bloquear las regalias por n meses, mientras estan en liquid staking  
