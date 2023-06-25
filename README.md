@@ -66,4 +66,10 @@ Retiro de Regalias:
 - Si desea compilar un nuevo contrato debera escribir el siguiente codigo en la raiz del proyecto
    "npx truffle migrate --network " seguido del nombre de la network en la que quiere hacer deploy y eliminar los archivos json existentes
 - Editar todos los archivo js en la variable "NETWORK_ID" dependiendo de la network seleccionada
-- Correr servidor local 
+- Correr servidor local
+- Abrir en archivo "registro.html"
+
+# Nota
+- Los contratos no estan Auditados
+- La Dapp se encuentra en etapa de desarrollo , con tu apoyo podra lanzarse una version alpha
+- La interfaz suele tener errores por la conexion entre el codigo y los contratos, por lo que es necesario cerrar y abrir de nuevo la dapp
