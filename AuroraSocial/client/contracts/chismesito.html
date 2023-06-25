@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chismesito</title>
+  
+    <style>
+
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    .container0 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .option {
+      flex-basis: 45%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: rgb(100, 171, 253);
+    }
+
+    .option-text {
+      text-align: center;
+    }
+      
+       
+        .publi{
+            width: 600px;
+          
+          border-radius: 3%; 
+          border: 1px solid gray; 
+          margin-left: auto;
+      margin-right: auto;
+          background-color: rgb(255, 255, 255)
+         
+        }
+        .publi1{
+            width: 550px;
+          
+          border-radius: 3%; 
+          border: 1px solid gray; 
+          margin-left: auto;
+      margin-right: auto;
+          background-color: rgb(255, 255, 255)
+         
+        }
+        .circular-image {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .container {
+          display: flex;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          padding: 10px;
+        }
+         
+        .column {
+          flex: 1;
+          padding: 10px;
+        }
+        .image-button {
+      display: inline-block;
+      padding: 10px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .transparent-button {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 50%;
+
+      background-color: transparent;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+
+    }
+
+    .transparent-button:hover {
+      background-color: rgb(100, 171, 253);
+      transform: scale(1.1);
+    }
+
+    .image-button:hover {
+      background-color: gray;
+      transform: scale(1.1);
+    }
+
+    .separator {
+      border-top: 1px solid gray;
+      margin: 20px 0;
+    }
+
+    .center {
+      margin-right: auto;
+    }
+
+    .prettyprint {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 14px;
+    }
+  </style>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+      </style>
+
+</head>
+
+<body class="back">
+<h2 id="title" class="post-title" >New post</h2>
+
+  <div id="publico" class="publi">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0">
+       <p>Contenido de la publicación</p>
+    </div>
+  
+    <div class="container">
+   
+        <div class="column">
+          <button class="image-button">
+              <img src="corazon.png" alt="Like">
+              <span>Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  <div id="separador" class="separator"></div>
+  
+    <div id="comments"class="comments">
+      <div id="usserC"class="comment">
+          <p>Usser Date </p>
+        </div>
+      <div id="contentC" class="comment">
+        <p>Comment 1</p>
+      </div>
+      <button class="image-button">
+          <img src="corazon.png" alt="Like">
+          <span>Like</span>
+        </button> 
+        <button class="image-button">
+          <img src="comment.png" alt="Comment">
+          <span>Comment</span>
+        </button>    
+    </div>
+   
+  </div>
+</br>
+<h2 id="title" class="post-title" >Post new Code </h2>
+
+  <div id="publi" class="publi">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0">
+    <pre class="prettyprint">
+      <code>
+        function greet() {
+          console.log("Hello, world!");
+        }
+      </code>
+    </pre>    </div>
+  
+    <div class="container">
+   
+        <div class="column">
+          <button class="image-button">
+              <img src="corazon.png" alt="Like">
+              <span>Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  <div id="separador" class="separator"></div>
+  
+    <div id="comments"class="comments">
+      <div id="usserC"class="comment">
+          <p>Usser Date </p>
+        </div>
+      <div id="contentC" class="comment">
+        <p>Comment 1</p>
+      </div>
+      <button class="image-button">
+          <img src="corazon.png" alt="Like">
+          <span>Like</span>
+        </button> 
+        <button class="image-button">
+          <img src="comment.png" alt="Comment">
+          <span>Comment</span>
+        </button>    
+    </div>
+   
+  </div>
+</br>
+<h2 id="title" class="post-title" >Vote </h2>
+
+<div id="publi" class="publi">
+  <h2 id="title" class="post-title">Title</h2>
+
+  <div class="container">
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+  <div class="container0">
+    <div class="question">
+      <div class="question-text">¿Qué harías en esta situación?</div>
+      <div class="options">
+        <div class="option">
+          <div class="option-text">Opción A</div>
+        </div>
+        <div class="option">
+          <div class="option-text">Opción B</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+ 
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+ 
+</div>
+</br>
+<h2 id="title" class="post-title" >Bet</h2>
+<div id="publi" class="publi">
+  <h2 id="title" class="post-title">Title</h2>
+
+  <div class="container">
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+
+  <div id="content" class="post-content">
+    <p>Contenido de la publicación</p>
+  </div>
+
+
+  <div class="container">
+ 
+    <div class="column">
+        <button class="transparent-button">Aprove</button> 
+    </div>
+    <div id="n" class="column">
+        <p>N</p>
+    </div>
+    <div class="column">
+        <button class="transparent-button">Disprove</button>
+    </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+
+</div>
+</br>
+<h2 id="title" class="post-title" >Retwit</h2>
+
+<div id="publi" class="publi">
+
+  <div class="container">
+
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+ <div class="content">
+  <div id="publi" class="publi1">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+      <div class="column">
+          <div class="circular-image">
+              <img src="squitle.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    </div>
+    <div class="container0">
+      <div class="question">
+        <div class="question-text">¿Qué harías en esta situación?</div>
+        <div class="options">
+          <div class="option">
+            <div class="option-text">Opción A</div>
+          </div>
+          <div class="option">
+            <div class="option-text">Opción B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+ 
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+    <div class="container">
+
+  </div>  </div>
+
+</br>
+ </div>
+</div>
+</br>
+<h2 id="title" class="post-title" >Share</h2>
+
+</br>
+<div id="publi" class="publi">
+
+  <div class="container">
+
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  
+  </div>
+
+ <div class="content">
+  <div id="publi" class="publi1">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+      <div class="column">
+          <div class="circular-image">
+              <img src="squitle.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    </div>
+  
+    <div class="container0">
+      <div class="question">
+        <div class="question-text">¿Qué harías en esta situación?</div>
+        <div class="options">
+          <div class="option">
+            <div class="option-text">Opción A</div>
+          </div>
+          <div class="option">
+            <div class="option-text">Opción B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+  </div>  </div>
+
+  <div class="container">
+ 
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+ </div>
+</div>
+</br>
+<h2 id="title" class="post-title" >Thread</h2>
+
+  <div id="publi" class="publi">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0">
+       <p>Contenido de la publicación</p>
+    </div>
+  
+    <div class="container">
+   
+        <div class="column">
+          <button class="image-button">
+              <img src="corazon.png" alt="Like">
+              <span>Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  
+    <div id="comments"class="comments">
+
+      <div id="publi" class="publi1">
+  
+        <div class="container">
+    
+          <div class="column">
+              <div class="circular-image">
+                  <img src="avatar.png" >
+                 
+                </div>
+          </div>
+          <div id="usser" class="column">
+              <p>Usser <span class="username"></span></p>
+          </div>
+          <div id="date" class="column">
+              <p>Date <span class="timestamp"></span></p>
+      
+          </div>
+          <div class="column">
+              <button class="image-button">
+                  <img src="star.png" alt="Favorite">
+                  <span>Favorite</span>
+                </button>
+          </div>
+        
+        </div>
+     
+       <div class="content0">
+           <p>Contenido de la publicación</p>
+        </div>
+      
+        <div class="container">
+       
+            <div class="column">
+              <button class="image-button">
+                  <img src="corazon.png" alt="Like">
+                  <span>Like</span>
+                </button>      </div>
+                <div class="column">
+  
+                  <button class="image-button">
+                   <img src="comment.png" alt="Comment">
+                   <span>Comment</span>
+                 </button> 
+                  </div>
+            <div class="column">
+              <button class="image-button">
+                  <img src="share.png" alt="Share">
+                  <span>Share</span>
+                </button>      </div>
+             
+                <div class="column">
+      
+                  <button class="image-button">
+                      <img src="retwit.png" alt="Retwit">
+                      <span>Retwit</span>
+                    </button>      
+               </div>
+            <div class="column">
+      
+              <button class="image-button">
+                  <img src="more.png" alt="More">
+                  <span>More</span>
+                </button>      
+           </div>
+          
+      </div>
+      
+       
+       
+    </div>
+  
+
+    <div id="publi" class="publi1">
+  
+      <div class="container">
+  
+        <div class="column">
+            <div class="circular-image">
+                <img src="avatar.png" >
+               
+              </div>
+        </div>
+        <div id="usser" class="column">
+            <p>Usser <span class="username"></span></p>
+        </div>
+        <div id="date" class="column">
+            <p>Date <span class="timestamp"></span></p>
+    
+        </div>
+        <div class="column">
+            <button class="image-button">
+                <img src="star.png" alt="Favorite">
+                <span>Favorite</span>
+              </button>
+        </div>
+      
+      </div>
+   
+     <div class="content0">
+         <p>Contenido de la publicación</p>
+      </div>
+    
+      <div class="container">
+     
+          <div class="column">
+            <button class="image-button">
+                <img src="corazon.png" alt="Like">
+                <span>Like</span>
+              </button>      </div>
+              <div class="column">
+
+                <button class="image-button">
+                 <img src="comment.png" alt="Comment">
+                 <span>Comment</span>
+               </button> 
+                </div>
+          <div class="column">
+            <button class="image-button">
+                <img src="share.png" alt="Share">
+                <span>Share</span>
+              </button>      </div>
+           
+              <div class="column">
+    
+                <button class="image-button">
+                    <img src="retwit.png" alt="Retwit">
+                    <span>Retwit</span>
+                  </button>      
+             </div>
+          <div class="column">
+    
+            <button class="image-button">
+                <img src="more.png" alt="More">
+                <span>More</span>
+              </button>      
+         </div>
+        
+    </div>
+  
+  </div>
+
+  </div>
+</br>
+
+
+<script>
+     
+/*
+    // Obtener el elemento original
+    var originalDiv = document.getElementById("publi");
+
+    // Clonar el elemento original
+    var clonedDiv = originalDiv.cloneNode(true);
+
+    // Modificar valores de las etiquetas de las copias
+    var clonedTitle = clonedDiv.querySelector("#title");
+    var clonedUsser = clonedDiv.querySelector("#usser");
+    var clonedDate = clonedDiv.querySelector("#date");
+    var clonedContent = clonedDiv.querySelector("#content");
+    var clonedN = clonedDiv.querySelector("#n");
+
+    clonedTitle.textContent = "Nuevo Título";
+    clonedUsser.textContent = "Nuevo Usser";
+    clonedDate.textContent = "Nuevo Date";
+    clonedContent.textContent = "Nuevo Contet";
+    clonedN.textContent = "N+";
+
+    // Insertar las copias en diferentes partes del documento
+    document.body.appendChild(clonedDiv);
+
+
+    var parentDiv = document.getElementById("comments");
+
+var originalComment = document.getElementById("comments");
+
+var clonedComment = originalComment.cloneNode(true);
+
+var clonedUsserC = clonedComment.querySelector("#usserC");
+var clonedContentC = clonedComment.querySelector("#contentC");
+
+
+clonedUsserC.textContent = "Nuevo Usser";
+clonedContentC.textContent = "Nuevo Contet";
+
+parentDiv.appendChild(clonedComment);
+
+*/
+  </script>
+</body>
+</html>

@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aurora Social</title>
+  
+    <style>
+
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    .container0 {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .option {
+      flex-basis: 45%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: rgb(100, 171, 253);
+    }
+
+    .option-text {
+      text-align: center;
+    }
+      
+       
+        .publi{
+            width: 700px;
+          
+          border-radius: 3%; 
+          border: 1px solid gray; 
+          margin-left: auto;
+      margin-right: auto;
+          background-color: rgb(255, 255, 255)
+         
+        }
+        .publi1{
+            width: 550px;
+          
+          border-radius: 3%; 
+          border: 1px solid gray; 
+          margin-left: auto;
+      margin-right: auto;
+          background-color: rgb(255, 255, 255)
+         
+        }
+        .circular-image {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .container {
+          display: flex;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          padding: 10px;
+        }
+         
+        .column {
+          flex: 1;
+          padding: 10px;
+        }
+        .image-button {
+      display: inline-block;
+      padding: 10px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .transparent-button {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 50%;
+
+      background-color: transparent;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+
+    }
+
+    .transparent-button:hover {
+      background-color: rgb(100, 171, 253);
+      transform: scale(1.1);
+    }
+
+    .image-button:hover {
+      background-color: gray;
+      transform: scale(1.1);
+    }
+
+    .separator {
+      border-top: 1px solid gray;
+      margin: 20px 0;
+    }
+
+    .center {
+      margin-right: auto;
+    }
+
+    .prettyprint {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 14px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.4.0/dist/ethers.umd.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript" src ="AuroraSocial.js"></script>
+</style>
+
+</head>
+
+<body class="back">
+<h2 id="title" class="post-title"  >New post</h2>
+
+  <div id="post" class="publi" >
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0" id="content">
+       <p>Contenido de la publicación</p>
+    </div>
+  
+    <div class="container">
+   
+        <div class="column" id="like">
+          <button class="image-button" >
+              <img src="corazon.png" alt="Like">
+              <span  >Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  <div id="separador" class="separator"></div>
+  
+    <div id="comments"class="comments">
+      <div id="usserC"class="comment">
+          <p>Usser Date </p>
+        </div>
+      <div id="contentC" class="comment">
+        <p>Comment 1</p>
+      </div>
+      <button class="image-button" id="img_like">
+          <img src="corazon.png" alt="Like">
+          <span>Like</span>
+        </button> 
+        <button class="image-button" id="img_comment">
+          <img src="comment.png" alt="Comment">
+          <span>Comment</span>
+        </button>    
+    </div>
+   </br>
+  </div>
+
+<h2 id="title" class="post-title" >Post new Code </h2>
+
+  <div id="code" class="publi">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0">
+    <pre class="prettyprint">
+      <code id="code_out">
+        function greet() {
+          console.log("Hello, world!");
+        }
+      </code>
+    </pre>    </div>
+  
+    <div class="container">
+   
+        <div class="column" id="like">
+          <button class="image-button">
+              <img src="corazon.png" alt="Like">
+              <span>Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  <div id="separador" class="separator"></div>
+  
+    <div id="comments"class="comments">
+      <div id="usserC"class="comment">
+          <p>Usser Date </p>
+        </div>
+      <div id="contentC" class="comment" >
+        <p>Comment 1</p>
+      </div>
+      <button class="image-button" id="img_like">
+          <img src="corazon.png" alt="Like">
+          <span>Like</span>
+        </button> 
+        <button class="image-button" id="img_comment">
+          <img src="comment.png" alt="Comment">
+          <span>Comment</span>
+        </button>    
+    </div>
+   </br>
+  </div>
+
+<h2 id="title" class="post-title" >Vote </h2>
+
+<div id="vote" class="publi">
+  <h2 id="title" class="post-title">Title</h2>
+
+  <div class="container">
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+  <div class="container0">
+    <div class="question">
+      <div class="question-text" id="question">¿Qué harías en esta situación?</div>
+      <div class="options">
+        <div class="option">
+          <div class="option-text" id="optionA">Opción A</div>
+        </div>
+        <div class="option">
+          <div class="option-text" id="optionB">Opción B</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+ 
+      <div class="column" id="like">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button" id="img_like">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button" id="img_comment">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+ </br>
+</div>
+
+<h2 id="title" class="post-title" >Bet</h2>
+<div id="bet" class="publi">
+  <h2 id="title" class="post-title">Title</h2>
+
+  <div class="container">
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+
+  <div id="bet" class="post-content">
+    <p>Contenido de la publicación</p>
+  </div>
+
+
+  <div class="container">
+ 
+    <div class="column">
+        <button class="transparent-button" id="resultA">Aprove</button> 
+    </div>
+    <div id="n" class="column">
+        <p>N</p>
+    </div>
+    <div class="column">
+        <button class="transparent-button" id="resultB" >Disprove</button>
+    </div>
+      <div class="column" id="like">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like" id="img_like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button" id="img_comment">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+</br>
+</div>
+
+<h2 id="title" class="post-title" >Retwit</h2>
+
+<div id="retwit" class="publi">
+
+  <div class="container">
+
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  </div>
+
+ <div class="content">
+  <div id="publi" class="publi1">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+      <div class="column">
+          <div class="circular-image">
+              <img src="squitle.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    </div>
+    <div class="container0">
+      <div class="question">
+        <div class="question-text">¿Qué harías en esta situación?</div>
+        <div class="options">
+          <div class="option">
+            <div class="option-text">Opción A</div>
+          </div>
+          <div class="option">
+            <div class="option-text">Opción B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+ 
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+  
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+    <div class="container">
+
+  </div>  </div>
+
+</br>
+ </div></br>
+</div>
+
+<h2 id="share" class="post-title" >Share</h2>
+
+</br>
+<div id="publi" class="publi">
+
+  <div class="container">
+
+    <div class="column">
+        <div class="circular-image">
+            <img src="avatar.png" >
+           
+          </div>
+    </div>
+    <div id="usser" class="column">
+        <p>Usser <span class="username"></span></p>
+    </div>
+    <div id="date" class="column">
+        <p>Date <span class="timestamp"></span></p>
+
+    </div>
+    <div class="column">
+        <button class="image-button">
+            <img src="star.png" alt="Favorite">
+            <span>Favorite</span>
+          </button>
+    </div>
+  
+  </div>
+
+ <div class="content">
+  <div id="publi" class="publi1">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+      <div class="column">
+          <div class="circular-image">
+              <img src="squitle.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    </div>
+  
+    <div class="container0">
+      <div class="question">
+        <div class="question-text">¿Qué harías en esta situación?</div>
+        <div class="options">
+          <div class="option">
+            <div class="option-text">Opción A</div>
+          </div>
+          <div class="option">
+            <div class="option-text">Opción B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+  </div>  </div>
+
+  <div class="container">
+ 
+      <div class="column">
+        <button class="image-button">
+            <img src="corazon.png" alt="Like">
+            <span>Like</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="share.png" alt="Share">
+            <span>Share</span>
+          </button>      </div>
+      <div class="column">
+        <button class="image-button">
+            <img src="save.png" alt="Save">
+            <span>Save</span>
+          </button>      </div>
+          <div class="column">
+
+            <button class="image-button">
+                <img src="retwit.png" alt="Retwit">
+                <span>Retwit</span>
+              </button>      
+         </div>
+      <div class="column">
+
+        <button class="image-button">
+            <img src="more.png" alt="More">
+            <span>More</span>
+          </button>      
+     </div>
+</div>
+<div id="separador" class="separator"></div>
+
+  <div id="comments"class="comments">
+    <div id="usserC"class="comment">
+        <p>Usser Date </p>
+      </div>
+    <div id="contentC" class="comment">
+      <p>Comment 1</p>
+    </div>
+    <button class="image-button">
+        <img src="corazon.png" alt="Like">
+        <span>Like</span>
+      </button> 
+      <button class="image-button">
+        <img src="comment.png" alt="Comment">
+        <span>Comment</span>
+      </button>    
+  </div>
+ </div></br>
+</div>
+
+<h2 id="title" class="post-title" >Thread</h2>
+
+  <div id="thread" class="publi">
+    <h2 id="title" class="post-title">Title</h2>
+  
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+          <p>Usser <span class="username"></span></p>
+      </div>
+      <div id="date" class="column">
+          <p>Date <span class="timestamp"></span></p>
+  
+      </div>
+      <div class="column">
+          <button class="image-button">
+              <img src="star.png" alt="Favorite">
+              <span>Favorite</span>
+            </button>
+      </div>
+    
+    </div>
+ 
+   <div class="content0">
+       <p>Contenido de la publicación</p>
+    </div>
+  
+    <div class="container">
+   
+        <div class="column">
+          <button class="image-button">
+              <img src="corazon.png" alt="Like">
+              <span>Like</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="share.png" alt="Share">
+              <span>Share</span>
+            </button>      </div>
+        <div class="column">
+          <button class="image-button">
+              <img src="save.png" alt="Save">
+              <span>Save</span>
+            </button>      </div>
+            <div class="column">
+  
+              <button class="image-button">
+                  <img src="retwit.png" alt="Retwit">
+                  <span>Retwit</span>
+                </button>      
+           </div>
+        <div class="column">
+  
+          <button class="image-button">
+              <img src="more.png" alt="More">
+              <span>More</span>
+            </button>      
+       </div>
+  </div>
+  
+    <div id="comments"class="comments">
+
+      <div id="publi" class="publi1">
+  
+        <div class="container">
+    
+          <div class="column">
+              <div class="circular-image">
+                  <img src="avatar.png" >
+                 
+                </div>
+          </div>
+          <div id="usser" class="column">
+              <p>Usser <span class="username"></span></p>
+          </div>
+          <div id="date" class="column">
+              <p>Date <span class="timestamp"></span></p>
+      
+          </div>
+          <div class="column">
+              <button class="image-button">
+                  <img src="star.png" alt="Favorite">
+                  <span>Favorite</span>
+                </button>
+          </div>
+        
+        </div>
+     
+       <div class="content0">
+           <p>Contenido de la publicación</p>
+        </div>
+      
+        <div class="container">
+       
+            <div class="column">
+              <button class="image-button">
+                  <img src="corazon.png" alt="Like">
+                  <span>Like</span>
+                </button>      </div>
+                <div class="column">
+  
+                  <button class="image-button">
+                   <img src="comment.png" alt="Comment">
+                   <span>Comment</span>
+                 </button> 
+                  </div>
+            <div class="column">
+              <button class="image-button">
+                  <img src="share.png" alt="Share">
+                  <span>Share</span>
+                </button>      </div>
+             
+                <div class="column">
+      
+                  <button class="image-button">
+                      <img src="retwit.png" alt="Retwit">
+                      <span>Retwit</span>
+                    </button>      
+               </div>
+            <div class="column">
+      
+              <button class="image-button">
+                  <img src="more.png" alt="More">
+                  <span>More</span>
+                </button>      
+           </div>
+          
+      </div>
+      
+       
+       
+    </div>
+  
+
+    <div id="publi" class="publi1">
+  
+      <div class="container">
+  
+        <div class="column">
+            <div class="circular-image">
+                <img src="avatar.png" >
+               
+              </div>
+        </div>
+        <div id="usser" class="column">
+            <p>Usser <span class="username"></span></p>
+        </div>
+        <div id="date" class="column">
+            <p>Date <span class="timestamp"></span></p>
+    
+        </div>
+        <div class="column">
+            <button class="image-button">
+                <img src="star.png" alt="Favorite">
+                <span>Favorite</span>
+              </button>
+        </div>
+      
+      </div>
+   
+     <div class="content0">
+         <p>Contenido de la publicación</p>
+      </div>
+    
+      <div class="container">
+     
+          <div class="column">
+            <button class="image-button">
+                <img src="corazon.png" alt="Like">
+                <span>Like</span>
+              </button>      </div>
+              <div class="column">
+
+                <button class="image-button">
+                 <img src="comment.png" alt="Comment">
+                 <span>Comment</span>
+               </button> 
+                </div>
+          <div class="column">
+            <button class="image-button">
+                <img src="share.png" alt="Share">
+                <span>Share</span>
+              </button>      </div>
+           
+              <div class="column">
+    
+                <button class="image-button">
+                    <img src="retwit.png" alt="Retwit">
+                    <span>Retwit</span>
+                  </button>      
+             </div>
+          <div class="column">
+    
+            <button class="image-button">
+                <img src="more.png" alt="More">
+                <span>More</span>
+              </button>      
+         </div>
+        
+    </div>
+  
+  </div>
+
+  </div>
+
+</div>
+<h2 id="title" class="post-title" > Create Post</h2>
+
+ <div id="publi" class="publi">
+
+    <div class="container">
+
+      <div class="column">
+          <div class="circular-image">
+              <img src="avatar.png" >
+             
+            </div>
+      </div>
+      <div id="usser" class="column">
+        <input type="text" id="name" name="name" placeholder="New Post">
+
+      </div>
+  
+    
+    </div>
+
+  
+    <div class="container">
+   
+        <div class="column"  onclick="redirigirPost()">
+          <button class="image-button">
+              <img src="post.png" alt="Like">
+              <span>Post</span>
+            </button>      </div>
+        <div class="column"  onclick="redirigirCode()">
+          <button class="image-button">
+              <img src="code.png" alt="Share">
+              <span>Code</span>
+            </button>      </div>
+        <div class="column" onclick="redirigirVote()">
+          <button class="image-button">
+              <img src="vote.png" alt="Save">
+              <span>Vote</span>
+            </button>      </div>
+            <div class="column"  onclick="redirigirBet()">
+  
+              <button class="image-button">
+                  <img src="bet.png" alt="Retwit">
+                  <span>Bet</span>
+                </button>      
+           </div>
+        
+  </div>
+  
+   
+  </div><div class="container0">
+    <div class="question">
+      
+        <div class="option">
+          <div class="option-text" id="update" onclick="getContract()">Update</div>
+        </div>
+      
+    </div>
+  </div>
+
+</body>
+<script>      
+
+const NETWORK_ID = 11155111
+var contract
+var accounts
+var web3
+var balance
+var available
+var mint_amount
+
+function network(){
+// Crear una instancia de Web3 utilizando el proveedor de Metamask
+const web3 = new Web3(window.ethereum);
+
+// Cambiar a la red de Polygon (Matic)
+web3.eth.net.getId()
+  .then((networkId) => {
+    if (networkId !== NETWORK_ID ) {
+      window.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0x4e454152' }], // Cambiar 3 por 2 para Mainnet
+      })
+      .then(() => {
+        // Cambio de red exitoso
+        console.log('Se cambió a la red de Polygon');
+      })
+      .catch((error) => {
+        // Error al cambiar de red
+        console.error('Error al cambiar a la red de Polygon:', error);
+      });
+    }
+  })
+  .catch((error) => {
+    // Error al obtener el ID de la red actual
+    console.error('Error al obtener el ID de la red:', error);
+  })
+}
+network()
+
+function metamaskReloadCallback()
+{
+  window.ethereum.on('accountsChanged', (accounts) => {
+    document.getElementById("web3_message").textContent="Accounts changed, realoading...";
+    window.location.reload()
+  })
+  window.ethereum.on('networkChanged', (accounts) => {
+    document.getElementById("web3_message").textContent="Network changed, realoading...";
+    window.location.reload()
+  })
+}
+
+const getAccounts = async () => {
+  metamaskReloadCallback()
+  try {
+    await window.ethereum.request({ method: "eth_requestAccounts" })
+    resolve(web3)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+const getWeb3 = async () => {
+  return new Promise((resolve, reject) => {
+    if(document.readyState=="complete")
+    {
+      if (window.ethereum) {
+        const web3 = new Web3(window.ethereum)
+        resolve(web3)
+      } else {
+        reject("must install MetaMask")
+        document.getElementById("web3_message").textContent="Error: Please install Metamask";
+      }
+    }else
+    {
+      window.addEventListener("load", async () => {
+        if (window.ethereum) {
+          const web3 = new Web3(window.ethereum)
+          resolve(web3)
+        } else {
+          reject("must install MetaMask")
+          document.getElementById("web3_message").textContent="Error: Please install Metamask";
+        }
+      });
+    }
+  });
+};
+
+function handleRevertError(message) {
+  alert(message)
+}
+
+async function getRevertReason(txHash) {
+  const tx = await web3.eth.getTransaction(txHash)
+  await web3.eth
+    .call(tx, tx.blockNumber)
+    .then((result) => {
+      throw Error("unlikely to happen")
+    })
+    .catch((revertReason) => {
+      var str = "" + revertReason
+      json_reason = JSON.parse(str.substring(str.indexOf("{")))
+      handleRevertError(json_reason.message)
+    });
+}
+
+var contractR
+var accountsR
+var web3R
+
+const getContractA = async (web3) => {
+  const data = await getJSON("AuroraSocial.json")
+  const netId = await web3.eth.net.getId()
+  const deployedNetwork = data.networks[netId]
+  const contract = new web3.eth.Contract(
+    data.abi,
+    deployedNetwork && deployedNetwork.address
+  )
+  return contract
+}
+
+function getJSON(url) {
+  return new Promise(resolve => {
+    var xhr = new XMLHttpRequest()
+    xhr.open("GET", url, true)
+    xhr.responseType = "json"
+    xhr.onload = function () {
+      resolve(xhr.response)
+    }
+    xhr.send()
+  })
+}
+
+async function load() {
+  var awaitWeb3 = async function () {
+    web3R = await getWeb3()
+    web3R.eth.net.getId((err, netId) => {
+      var awaitContract = async function () {
+        contractR = await getContractA(web3R)
+        var awaitAccounts = async function () {
+          accountsR = await web3R.eth.getAccounts()
+          console.log("Web3 loaded")
+        }
+        awaitAccounts()
+      }
+      awaitContract()
+    })
+  }
+  awaitWeb3()
+}
+
+load()
+
+    
+
+var npost=0,ncode=0,nvote=0,nbet=0,l;
+
+function like_() {
+      const amount = web3R.utils.toWei('.01', 'ether'); // Cantidad a depositar en Wei (por ejemplo, 1 ETH)
+ contractR.methods.like(0).send({ from: wallet, value: amount })
+
+  .on('transactionHash', (hash) => {
+    console.log('Transacción enviada:', hash);
+    // Aquí puedes mostrar un mensaje de que la transacción se ha enviado con éxito
+  })
+  .on('confirmation', (confirmationNumber, receipt) => {
+    console.log('Confirmación de la transacción:', receipt);
+    // Aquí puedes realizar acciones adicionales una vez que la transacción se haya confirmado
+  })
+  .on('error', (error) => {
+    console.error('Error en la transacción:', error);
+    // Aquí puedes manejar el error de la transacción
+  });
+    } 
+
+    function myFunction() {
+      const amount = web3R.utils.toWei('.01', 'ether'); // Cantidad a depositar en Wei (por ejemplo, 1 ETH)
+ contractR.methods.like(0).send({ from: wallet, value: amount })
+
+  .on('transactionHash', (hash) => {
+    console.log('Transacción enviada:', hash);
+    // Aquí puedes mostrar un mensaje de que la transacción se ha enviado con éxito
+  })
+  .on('confirmation', (confirmationNumber, receipt) => {
+    console.log('Confirmación de la transacción:', receipt);
+    // Aquí puedes realizar acciones adicionales una vez que la transacción se haya confirmado
+  })
+  .on('error', (error) => {
+    console.error('Error en la transacción:', error);
+    // Aquí puedes manejar el error de la transacción
+  });
+    } 
+
+    function comment_() {
+      window.location.href = 'comment.html';
+    } 
+
+    function like_() {
+      const amount = web3R.utils.toWei('.01', 'ether'); // Cantidad a depositar en Wei (por ejemplo, 1 ETH)
+ contractR.methods.like(0).send({ from: wallet, value: amount })
+
+  .on('transactionHash', (hash) => {
+    console.log('Transacción enviada:', hash);
+    // Aquí puedes mostrar un mensaje de que la transacción se ha enviado con éxito
+  })
+  .on('confirmation', (confirmationNumber, receipt) => {
+    console.log('Confirmación de la transacción:', receipt);
+    // Aquí puedes realizar acciones adicionales una vez que la transacción se haya confirmado
+  })
+  .on('error', (error) => {
+    console.error('Error en la transacción:', error);
+    // Aquí puedes manejar el error de la transacción
+  });
+    } 
+
+    function optionA_() {
+      const amount = web3R.utils.toWei('.01', 'ether'); // Cantidad a depositar en Wei (por ejemplo, 1 ETH)
+ contractR.methods.depositContract(0,"Aprove").send({ from: wallet, value: amount })
+
+  .on('transactionHash', (hash) => {
+    console.log('Transacción enviada:', hash);
+    // Aquí puedes mostrar un mensaje de que la transacción se ha enviado con éxito
+  })
+  .on('confirmation', (confirmationNumber, receipt) => {
+    console.log('Confirmación de la transacción:', receipt);
+    // Aquí puedes realizar acciones adicionales una vez que la transacción se haya confirmado
+  })
+  .on('error', (error) => {
+    console.error('Error en la transacción:', error);
+    // Aquí puedes manejar el error de la transacción
+  });
+    } 
+
+    function optionB_() {
+      const amount = web3R.utils.toWei('.01', 'ether'); // Cantidad a depositar en Wei (por ejemplo, 1 ETH)
+ contractR.methods.depositContract(0,"Disaprove").send({ from: wallet, value: amount })
+
+  .on('transactionHash', (hash) => {
+    console.log('Transacción enviada:', hash);
+    // Aquí puedes mostrar un mensaje de que la transacción se ha enviado con éxito
+  })
+  .on('confirmation', (confirmationNumber, receipt) => {
+    console.log('Confirmación de la transacción:', receipt);
+    // Aquí puedes realizar acciones adicionales una vez que la transacción se haya confirmado
+  })
+  .on('error', (error) => {
+    console.error('Error en la transacción:', error);
+    // Aquí puedes manejar el error de la transacción
+  });
+    } 
+
+async function getContract() {
+
+     try {
+      // Obtén la primera cuenta del usuario en MetaMask
+
+
+    const p = await contractR.methods.getContratos(0).call();
+  
+    for(var a=0;a<=p[0];a++){   
+      document.body.appendChild(document.createElement('br'));
+
+      const persona = await contractR.methods.getContratos(a).call();
+
+      if(persona[1]=="Post"){
+        npost++;
+        var originalDiv = document.getElementById("post");
+        // Clonar el elemento original
+        var clonedDiv = originalDiv.cloneNode(true);
+        const datos = await contractR.methods.getPost(npost).call();
+
+        // Modificar valores de las etiquetas de las copias
+        var clonedTitle = clonedDiv.querySelector("#title");
+        var clonedUsser = clonedDiv.querySelector("#usser");
+        var clonedDate = clonedDiv.querySelector("#date");
+        var clonedContent = clonedDiv.querySelector("#content");
+
+        clonedTitle.textContent = datos[0];
+        clonedUsser.textContent = datos[2];
+        clonedDate.textContent = "22/06/23";
+        clonedContent.textContent = datos[1];
+
+        var clonedLike = clonedDiv.querySelector("#like");
+         clonedLike.onclick = like_;
+         var clonedComment = clonedDiv.querySelector("#img_comment");
+         clonedComment.onclick = comment_;
+         var clonedLikeComment = clonedDiv.querySelector("#img_like");
+         clonedLikeComment.onclick = like_;
+        // Insertar las copias en diferentes partes del documento
+        document.body.appendChild(clonedDiv);
+      }
+
+      if(persona[1]=="Code"){
+        ncode++;
+        var originalDiv = document.getElementById("code");
+        // Clonar el elemento original
+        var clonedDiv = originalDiv.cloneNode(true);
+        const datos = await contractR.methods.getCode(ncode).call();
+
+        // Modificar valores de las etiquetas de las copias
+        var clonedTitle = clonedDiv.querySelector("#title");
+        var clonedUsser = clonedDiv.querySelector("#usser");
+        var clonedDate = clonedDiv.querySelector("#date");
+        var clonedContent = clonedDiv.querySelector("#code_out");
+
+        clonedTitle.textContent = datos[0];
+        clonedUsser.textContent = datos[2];
+        clonedDate.textContent = "22/06/23";
+        clonedContent.textContent = datos[1];
+
+        var clonedLike = clonedDiv.querySelector("#like");
+         clonedLike.onclick = like_;
+  
+        // Insertar las copias en diferentes partes del documento
+        document.body.appendChild(clonedDiv);
+      }
+
+      if(persona[1]=="Vote"){
+        nvote++;
+        var originalDiv = document.getElementById("vote");
+        // Clonar el elemento original
+        var clonedDiv = originalDiv.cloneNode(true);
+        const datos = await contractR.methods.getVote(nvote).call();
+        // Modificar valores de las etiquetas de las copias
+        var clonedTitle = clonedDiv.querySelector("#title");
+        var clonedUsser = clonedDiv.querySelector("#usser");
+        var clonedDate = clonedDiv.querySelector("#date");
+        var clonedContent = clonedDiv.querySelector("#question");
+        var clonedOptionA = clonedDiv.querySelector("#optionA");
+        var clonedOptionB = clonedDiv.querySelector("#optionB");
+
+        clonedTitle.textContent = datos[0];
+        clonedUsser.textContent = datos[4];
+        clonedDate.textContent = "22/06/23";
+        clonedContent.textContent = datos[1];
+        clonedOptionA.textContent = datos[3];
+        clonedOptionB.textContent = datos[2];
+
+        var clonedLike = clonedDiv.querySelector("#like");
+         clonedLike.onclick = like_;
+         clonedOptionA.onclick = optionA_;
+         clonedOptionB.onclick = optionB_;
+        // Insertar las copias en diferentes partes del documento
+        document.body.appendChild(clonedDiv);
+      }
+     
+      if(persona[1]=="Bet"){
+        nbet++;
+        var originalDiv = document.getElementById("bet");
+        // Clonar el elemento original
+        var clonedDiv = originalDiv.cloneNode(true);
+        const datos = await contractR.methods.getBet(nbet).call();
+        // Modificar valores de las etiquetas de las copias
+        var clonedTitle = clonedDiv.querySelector("#title");
+        var clonedUsser = clonedDiv.querySelector("#usser");
+        var clonedDate = clonedDiv.querySelector("#date");
+        var clonedContent = clonedDiv.querySelector("#bet");
+        var clonedResultA = clonedDiv.querySelector("#resultA");
+        var clonedResultB = clonedDiv.querySelector("#resultB");
+
+        clonedTitle.textContent = datos[0];
+        clonedUsser.textContent = datos[5];
+        clonedDate.textContent = "22/06/23";
+        clonedContent.textContent = datos[1];
+        clonedResultA.textContent = datos[3];
+        clonedResultB.textContent = datos[2];
+
+        var clonedLike = clonedDiv.querySelector("#like");
+         clonedLike.onclick = like_;
+         clonedResultA.onclick = optionA_;
+         clonedResultB.onclick = optionB_;
+        // Insertar las copias en diferentes partes del documento
+        document.body.appendChild(clonedDiv);
+      }
+    }
+
+
+    // Crear instancia del contrato
+    // Realizar la transacción pagando 0.01 ETH
+     
+  } catch (error) {
+    console.error('Error al obtener persona:', error);
+  }
+  
+}
+
+var key=""
+var wallet=getWallet()
+
+function getWallet(){
+  
+  if (typeof window.ethereum !== 'undefined') {
+    const provider = window.ethereum;
+  
+    // Obtener la dirección de la billetera activa en Metamask
+    provider.request({ method: 'eth_requestAccounts' })
+      .then((accounts) => {
+        
+        wallet= accounts[0];
+        
+      })
+      .catch((error) => {
+        console.error('Error al obtener la dirección de la billetera:', error);
+      });
+     
+  } else {
+    console.error('Metamask no está instalado o no está disponible');
+}
+return wallet
+}
+
+const setLog = async () => {
+  
+  console.log("wallet: "+wallet)
+    var nombre = document.getElementById('title').value
+  var content = document.getElementById('content').value
+  
+  if(nombre!=""&&content!=""){
+
+     const result = await contractR.methods.setPost("Post",nombre,content)
+            .send({ from: accountsR[0], gas: 400000 })
+            window.location.href = 'chismesito.html';
+  }
+}
+
+function redirigirPost(){
+  window.location.href = 'post.html';
+}
+function redirigirCode(){
+  window.location.href = 'code.html';
+}
+function redirigirVote(){
+  window.location.href = 'vote.html';
+}
+function redirigirBet(){
+  window.location.href = 'bet.html';
+}
+  </script>
+
+</body>
+</html>
