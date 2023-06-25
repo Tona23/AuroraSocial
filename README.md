@@ -3,11 +3,11 @@ Hackathon
 
 Desarrollo de la plataforma web:
    - Contratos
-    + Base de datos
-    + Regalias
-    + Votar
-    + Apostar
-    + Reclamar regalias
+      - Base de datos
+      - Regalias
+      - Votar
+      - Apostar
+      - Reclamar regalias
    - Codigo
     + Interaccion creando nuevo
     + Interaccion creando nuevas publicaciones
