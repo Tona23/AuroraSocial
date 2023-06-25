@@ -9,12 +9,12 @@ Desarrollo de la plataforma web:
       - Apostar
       - Reclamar regalias
    - Codigo
-    + Interaccion creando nuevo
-    + Interaccion creando nuevas publicaciones
-    + Interaccion con publicaciones
+      - Interaccion creando nuevo
+      - Interaccion creando nuevas publicaciones
+      - Interaccion con publicaciones
    - Interfaz
-    + Desarrollo de las páginas
-    + Plantillas 
+      - Desarrollo de las páginas
+      - Plantillas 
 
 Dapp:
    - Registro
