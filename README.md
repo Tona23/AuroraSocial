@@ -56,20 +56,19 @@ Yield management and monetization:
    - After a while Unstake is made and the crypto are returned to the wallet, from the wallet they are deposited to the contract again to be able to distribute the royalties in eth Unstake
 ![Unstake](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Unstake.png)
 
-Retiro de Regalias:
-   - Los usuarios obtienen sus regalias haciendo claim despues de n meses
+Withdrawal of Royalty:
+   - Users get their royalties by claiming after n months
 
 # Code
-- Descargar la carpeta AuroraSocial
-- Instalar truffle en caso de no tenerlo instalado 
-- crear archivo .env en el cual debera colocar llave privada y api infiura
-- Si desea compilar un nuevo contrato debera escribir el siguiente codigo en la raiz del proyecto
-   "npx truffle migrate --network " seguido del nombre de la network en la que quiere hacer deploy y eliminar los archivos json existentes
-- Editar todos los archivo js en la variable "NETWORK_ID" dependiendo de la network seleccionada
-- Correr servidor local
-- Abrir en archivo "registro.html"
+- Download the AuroraSocial folder
+- Install truffle in case you don't have it installed
+- Create .env file in which you should place private key and api infiura
+- If you want to compile a new contract you should write the following code in the project root "npx truffle migrate --network " followed by the name of the network you want to deploy to and delete the existing json files
+- Edit all js files in the "NETWORK_ID" variable depending on the selected network
+- Run local server
+- Open in file "registro.html"
 
 # Nota
-- Los contratos no estan Auditados
-- La Dapp se encuentra en etapa de desarrollo , con tu apoyo podra lanzarse una version alpha
-- La interfaz suele tener errores por la conexion entre el codigo y los contratos, por lo que es necesario cerrar y abrir de nuevo la dapp
+- The contracts are not audited
+- The Dapp is in the development stage, with your support an alpha version can be launched
+- The interface usually has errors due to the connection between the code and the contracts, so it is necessary to close and reopen the dapp
