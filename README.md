@@ -2,6 +2,9 @@
 Hackathon Encode x Aurora
 ![Logo](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/AuroraSocial.png)
 
+Introduction:
+- This Dapp is focused on independent researchers who seek recognition and privacy in their publications, since on many occasions they are at risk when they reveal classified or high-impact information for society, so through the platform they will have the freedom and security of Share your research with the world. Also, with the help of the community, they will be able to monetize their publications, since, if they like the content and give it a "like", they will receive royalties in crypto, depending on what people like to donate so that they can continue with their projects, among others. functionalities which they should take advantage of to grow their research, each user will set their own limit.
+
 Dapp development:
    - Contracts
       - Data Base
