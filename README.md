@@ -2,30 +2,30 @@
 Hackathon Encode x Aurora
 ![Logo](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/AuroraSocial.png)
 
-Desarrollo de la plataforma web:
-   - Contratos
-      - Base de datos
-      - Regalias
-      - Votar
-      - Apostar
-      - Reclamar regalias
-   - Codigo
-      - Interaccion creando nuevo
-      - Interaccion creando nuevas publicaciones
-      - Interaccion con publicaciones
-   - Interfaz
-      - Desarrollo de las páginas
-      - Plantillas 
+Dapp development:
+   - Contracts
+      - Data Base
+      - Royalties
+      - Vote
+      - Bet
+      - Claim Royalties
+   - Code
+      - Interaction create new register
+      - Interaction create new post
+      - Interaction whith posts
+   - Interface
+      - Development of the pages
+      - Templates 
 
 Dapp:
-   - Registro
-      - Usuario
-      - Correo
+   - Register
+      - Usser
+      - Mail
       - Sing_in
       - Sing_up
 ![Registro](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Registro.png)
 
-   - Plantillas
+   - Templates
       - New Post
       - Post New Code
       - Vote
@@ -33,15 +33,15 @@ Dapp:
 ![Post](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Post.png)
 
    - New Post
-      - Crear new post
-      - Crear Post New Code
-      - Crear Vote-
-      - Crear Bet
+      - Create new post
+      - Create Post New Code
+      - Create Vote-
+      - Create Bet
         ![Create](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/create.png)
 
    - Update
-      - Ver todas las publicaciones de la comunidad
-      - Interactuar con publicaciones
+      - See all community posts
+      - Interact with posts
 ![Update](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/publi.png)
 ![regalia](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Regalia.png)
 
