@@ -46,14 +46,14 @@ Dapp:
 ![regalia](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Regalia.png)
 
 
-Integración de Metapool y stNear:
-   - Bloquear las regalias por n meses, mientras estan en liquid staking  
-   - El usuario recibe las regalias originales y el rendimiento se queda en la plataforma para autofinanciarse evitando publicidad y cobro por suscripcion, todas las transacciones por parte del usuario seran a travez de eth (proximamente con stNear,Aurora, stAurora)
+Metapool and stNear integration:
+   - Lock royalties for n months, while they are liquid staking
+   - The user receives the original royalties and the performance remains on the platform to self-finance avoiding advertising and subscription charges, all transactions by the user will be through eth (soon with stNear, Aurora, stAurora)
 ![Metapool](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Metapool.png)
 
-Gestión de rendimientos y monetización:
-   - La wallet creadora del contrato recibira las regalias cada n tiempo , depues se llevaran las crypto a metapool para meter fondos a Liquid Stake  
-   - Despues de n tiempo se hace Unstake y se regresan las crypto a la wallet, de la wallet se depositan al contrato de nuevo para poder repartir las regalias en eth
+Yield management and monetization:
+   - The wallet that created the contract will receive the royalties every n time, then they will take the crypto to metapool to put funds into Liquid Stake
+   - After a while Unstake is made and the crypto are returned to the wallet, from the wallet they are deposited to the contract again to be able to distribute the royalties in eth Unstake
 ![Unstake](https://raw.githubusercontent.com/Tona23/AuroraSocial/main/Unstake.png)
 
 Retiro de Regalias:
